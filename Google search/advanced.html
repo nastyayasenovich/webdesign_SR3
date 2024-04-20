@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Google Search</title>
+    <style>
+        body {
+            text-align: center; /* Центрування тексту */
+            margin-top: 50px; /* Відступ від верхнього краю */
+        }
+        .header-links {
+            text-align: right;
+            margin-top: 10px;
+        }
+        .header-links a {
+            margin-left: 10px;
+            color: #c2c2c2; /* Колір тексту */
+            text-decoration: none; /* Видалення підчеркування */
+        }
+        .header-links a:hover {
+            color: #0056b3; /* Колір тексту при наведенні */
+            text-decoration: underline; /* З'явлення підчеркування при наведенні */
+        }
+        .search-container {
+            text-align: left; /* Вирівнюємо текст за лівим краєм */
+            width: 50%; /* Ширина контейнера */
+            margin: auto; /* Автоматичне центрування */
+        }
+        .search-container input[type="text"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%; /* Ширина текстових полів рівна контейнеру */
+            box-sizing: border-box;
+            font-size: 16px;
+            outline: none;
+            margin-bottom: 10px; /* Відступ між текстовими полями */
+        }
+        .search-container input[type="submit"] {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #007bff; /* Голубий колір */
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .search-container input[type="submit"]:hover {
+            background-color: #0056b3; /* Змінений колір при наведенні */
+        }
+    </style>
+</head>
+<body>
+    <div class="header-links">
+        <a href="index.html">Return to Google Search</a>
+    </div>
+    <div class="search-container">
+        <form action="https://www.google.com/search">
+            <input type="text" name="as_q" placeholder="Find pages with all these words...">
+            <br>
+            <input type="text" name="as_epq" placeholder="Find pages with this exact word or phrase...">
+            <br>
+            <input type="text" name="as_oq" placeholder="Find pages with at least one of these words...">
+            <br>
+            <input type="text" name="as_eq" placeholder="Find pages without...">
+            <br>
+            <input type="submit" value="Advanced Google Search">
+        </form>
+    </div>
+</body>
+</html>
